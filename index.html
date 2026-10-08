@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REN ELECTRICS - Electrical Services</title>
+  <link rel="stylesheet" href="style.css">
+</head><body>  <main class="flyer-card"><!-- Hero Image -->
+<header class="hero-header">
+  <img src="1.jpeg" alt="Electrician at work" class="hero-img">
+  <div class="hero-overlay"></div>
+</header>
+
+<div class="content-wrapper">
+
+  <!-- Brand -->
+  <div class="brand-container">
+    <div class="brand-logo">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M11 15H6l7-14v8h5l-7 14v-8z"/>
+      </svg>
+    </div>
+
+    <div class="brand-name">REN ELECTRICS</div>
+  </div>
+
+  <!-- Main Title -->
+  <section class="title-section">
+    <h1 class="main-title">
+      ELECTRICAL<br>
+      <span class="highlight">SERVICES</span>
+    </h1>
+
+    <p class="tagline">
+      Reliable electrical solutions for your home.
+    </p>
+
+    <p class="location">
+      📍 Rizal, Kananga, Leyte
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section class="services-section">
+    <h2 class="section-title">OUR SERVICES</h2>
+
+    <div class="services-grid">
+
+      <div class="service-card" onclick="selectService('Electrical Troubleshooting')">
+        <span class="service-icon">⚡</span>
+        <span class="text">Electrical Troubleshooting</span>
+      </div>
+
+      <div class="service-card" onclick="selectService('House Wiring')">
+        <span class="service-icon">🔌</span>
+        <span class="text">House Wiring</span>
+      </div>
+
+      <div class="service-card" onclick="selectService('Electrical Installation')">
+        <span class="service-icon">💡</span>
+        <span class="text">Electrical Installation</span>
+      </div>
+
+      <div class="service-card" onclick="selectService('Wiring Repairs')">
+        <span class="service-icon">🔧</span>
+        <span class="text">Wiring Repairs</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Estimate Button -->
+  <div class="interactive-btn-container">
+    <button id="estimateBtn" class="btn-estimate">
+      ⚡ Get a Free Estimate
+    </button>
+  </div>
+
+  <!-- Contact -->
+  <footer class="contact-banner">
+
+    <div class="contact-title">CONTACT US</div>
+
+    <div class="contact-details">
+
+      <!-- Phone -->
+      <a href="tel:+639265915051" class="contact-item">
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24
+          1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1
+          -9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1
+          1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+
+        +63 926 591 5051
+      </a>
+
+      <!-- Gmail -->
+      <a
+        href="mailto:balduezajhorren@gmail.com?subject=Electrical%20Service%20Inquiry"
+        class="contact-item"
+      >
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0
+          1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0
+          4-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+
+        balduezajhorren@gmail.com
+      </a>
+
+    </div>
+  </footer>
+
+</div>
+
+  </main>  <!-- Estimate Modal -->  <div id="quoteModal" class="modal"><div class="modal-content">
+
+  <button class="close-modal" aria-label="Close">&times;</button>
+
+  <h3>Request Service</h3>
+
+  <p id="selectedServiceText">
+    Selected: General Inquiry
+  </p>
+
+  <form id="quoteForm">
+
+    <input
+      type="text"
+      id="customerName"
+      placeholder="Your Name"
+      required
+    >
+
+    <input
+      type="tel"
+      id="customerPhone"
+      placeholder="Your Phone Number"
+      required
+    >
+
+    <textarea
+      id="customerMessage"
+      placeholder="Describe the electrical problem..."
+      rows="4"
+      required
+    ></textarea>
+
+    <button type="submit" class="btn-submit">
+      Send Request via Gmail
+    </button>
+
+  </form>
+
+</div>
+
+  </div>  <script src="script.js"></script></body>
+</html>
